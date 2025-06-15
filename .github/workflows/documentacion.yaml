@@ -17,7 +17,7 @@ jobs:
         with:
           donet-version: 9.0.x
       - name: instalar dependencias
-        run: donet restore
+        run: dotnet restore
 
       - name: compilar
         run: donet build --no-restore
