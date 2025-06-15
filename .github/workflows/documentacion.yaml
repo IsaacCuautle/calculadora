@@ -15,12 +15,12 @@ jobs:
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v4
         with:
-          donet-version: 9.0.x
+          dotnet-version: 9.0.x
       - name: instalar dependencias
         run: dotnet restore
 
       - name: compilar
-        run: donet build --no-restore
+        run: dotnet build --no-restore
 
   crear-pdf:
     runs-on: ubuntu-latest
